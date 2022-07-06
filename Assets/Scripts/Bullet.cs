@@ -32,14 +32,15 @@ public class Bullet : MonoBehaviour
         }
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
         transform.LookAt(target);
+        
 
     }
     void HitTarget()
     {
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
-        Destroy(effectIns, 2f);
+        Destroy(effectIns, 5f);
 
-        if(explosionRadius > 0f)
+        if (explosionRadius > 0f)
         {
             Explode();
         }
@@ -48,18 +49,31 @@ public class Bullet : MonoBehaviour
             Damage(target);
         }
 
-        Destroy(target.gameObject);
+        
         Destroy(gameObject);
         
     }
 
     void Explode()
     {
-        
+        Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
+        foreach(Collider collider in colliders)
+        {
+            if(collider.tag == "Enemy")
+            {
+                Damage(collider.transform);
+            }
+        }
     }
 
     void Damage(Transform enemy)
     {
-        Destroy(target.gameObject);
+        Destroy(enemy.gameObject);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }
 }
