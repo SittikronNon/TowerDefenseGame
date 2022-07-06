@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour
     private Transform target;
 
     public float speed = 70f;
+    public float explosionRadius = 0f;
     public GameObject impactEffect;
 
     public void Seek (Transform _target)
@@ -30,14 +31,35 @@ public class Bullet : MonoBehaviour
             return;
         }
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
+        transform.LookAt(target);
+
     }
     void HitTarget()
     {
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 2f);
 
+        if(explosionRadius > 0f)
+        {
+            Explode();
+        }
+        else
+        {
+            Damage(target);
+        }
+
         Destroy(target.gameObject);
         Destroy(gameObject);
         
+    }
+
+    void Explode()
+    {
+        
+    }
+
+    void Damage(Transform enemy)
+    {
+        Destroy(target.gameObject);
     }
 }
