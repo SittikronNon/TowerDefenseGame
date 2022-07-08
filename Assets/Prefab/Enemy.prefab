@@ -97,7 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f072a58e08df43346a585eb4181acb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 10
+  health: 100
+  gold: 10
+  deathEffect: {fileID: 22781518256754565, guid: 95f204c8db065b3418e266bb79f2f6d8, type: 3}
 --- !u!135 &5186301931416488248
 SphereCollider:
   m_ObjectHideFlags: 0
