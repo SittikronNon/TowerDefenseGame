@@ -14239,12 +14239,12 @@ MonoBehaviour:
   missileTurret:
     prefab: {fileID: 137127685719996543, guid: af4d27241a0f2b94c988e28c6b00ea95, type: 3}
     cost: 250
-    upgradedPrefab: {fileID: 0}
+    upgradedPrefab: {fileID: 137127685719996543, guid: d4a3f01b1c3880346bb7043428dfb03e, type: 3}
     upgradeCost: 100
   laserBeamer:
     prefab: {fileID: 1376421796988359713, guid: c086cb902a9c0f84e990393d12c5fe0a, type: 3}
     cost: 350
-    upgradedPrefab: {fileID: 0}
+    upgradedPrefab: {fileID: 1376421796988359713, guid: 9e44723271b514845b5ba1283ff38865, type: 3}
     upgradeCost: 200
 --- !u!1001 &1750884334
 PrefabInstance:
