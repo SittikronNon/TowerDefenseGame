@@ -10418,6 +10418,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundsText: {fileID: 543885092}
+  menuSceneName: MainMenu
+  sceneFader: {fileID: 1719150161}
 --- !u!95 &1209399238
 Animator:
   serializedVersion: 4
@@ -14819,6 +14821,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7173640467229604719, guid: 0d2b887e919512844a534863ab1f172b, type: 3}
   m_PrefabInstance: {fileID: 1699727321}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1719150161 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5285747501574923999, guid: 8c15bc5d904c06248a7fb36f138bd9c2, type: 3}
+  m_PrefabInstance: {fileID: 5285747501196635653}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7990addb4b15cb4448c09831b08cc7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1721540698
 GameObject:
   m_ObjectHideFlags: 0
@@ -15061,6 +15074,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 2116040810}
+  menuSceneName: MainMenu
+  sceneFader: {fileID: 1719150161}
 --- !u!1 &1726210527
 GameObject:
   m_ObjectHideFlags: 0
