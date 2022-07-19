@@ -11,10 +11,7 @@ public class GameOver : MonoBehaviour
 
     public SceneFader sceneFader;
 
-    void OnEnable()
-    {
-        roundsText.text = PlayerStats.Rounds.ToString();
-    }
+    
 
     public void Retry()
     {
