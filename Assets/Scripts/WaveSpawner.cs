@@ -52,6 +52,7 @@ public class WaveSpawner : MonoBehaviour
         if(waveIndex == waves.Length)
         {
             Debug.Log("LEVEL WON!");
+            this.enabled = false;
         }    
         
     }
