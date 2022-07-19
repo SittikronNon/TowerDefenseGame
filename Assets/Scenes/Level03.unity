@@ -15002,7 +15002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy: {fileID: 64440821143821531, guid: ea73d1f378f1b3f44ac8d905873f0005, type: 3}
-    count: 1
+    count: 10
     spawnRate: 2
   - enemy: {fileID: 64440821143821531, guid: ea73d1f378f1b3f44ac8d905873f0005, type: 3}
     count: 3
@@ -15019,7 +15019,6 @@ MonoBehaviour:
   spawnPoint: {fileID: 231424613}
   timeBetweenWaves: 10
   waveCountdownText: {fileID: 262871646}
-  gameManager: {fileID: 1723299979}
 --- !u!4 &1723299976
 Transform:
   m_ObjectHideFlags: 0
@@ -15062,8 +15061,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 377d8412ba7abc04b8d4cf748d69b9a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 400
-  startLives: 1
+  startMoney: 200
+  startLives: 10
 --- !u!114 &1723299979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15077,9 +15076,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1209399235}
-  sceneFader: {fileID: 1719150161}
-  nextLevel: Level02
-  levelToUnlock: 2
 --- !u!114 &1723299980
 MonoBehaviour:
   m_ObjectHideFlags: 0
