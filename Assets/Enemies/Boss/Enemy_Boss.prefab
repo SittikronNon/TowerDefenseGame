@@ -284,7 +284,7 @@ Transform:
   m_GameObject: {fileID: 64440821143821531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5, y: 1.56, z: -4.54}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 4.1744, y: 4.1744, z: 4.1744}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1354672816}
@@ -353,11 +353,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f072a58e08df43346a585eb4181acb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 8
+  startSpeed: 12
   speed: 10
-  startHealth: 300
-  gold: 310
-  deathEffect: {fileID: 22781518256754565, guid: 76925de8b457a17448f1d122211acfcd, type: 3}
+  startHealth: 1400
+  gold: 500
+  deathEffect: {fileID: 22781518256754565, guid: 0052f0cfe87b30d48b3d1920a00ed3f3, type: 3}
   healthBar: {fileID: 1575717720}
 --- !u!135 &5186301931416488248
 SphereCollider:
