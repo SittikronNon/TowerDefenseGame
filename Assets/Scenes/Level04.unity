@@ -18678,8 +18678,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad42ed4293ccd9c4fa7c1296551ef988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Level04
-  levelToUnlock: 4
+  nextLevel: MainMenu
+  levelToUnlock: 3
   menuSceneName: MainMenu
   sceneFader: {fileID: 1719150161}
 --- !u!4 &1988132273 stripped
