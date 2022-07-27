@@ -19,6 +19,10 @@ public class Enemy : MonoBehaviour
 
     private bool isDead = false;
 
+    [Header("Optional")]
+    public bool isMultiply = false;
+    public GameObject lesserSpawn;
+
     void Start()
     {
         speed = startSpeed;
@@ -54,6 +58,11 @@ public class Enemy : MonoBehaviour
         WaveSpawner.EnemiesAlive--;
 
         Destroy(gameObject);
+
+        if(isMultiply)
+        {
+            GameObject spawnMinions = (GameObject)Instantiate(lesserSpawn, transform.position, Quaternion.identity);
+        }
     }
 
     
