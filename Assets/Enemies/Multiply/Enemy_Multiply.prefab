@@ -360,6 +360,7 @@ MonoBehaviour:
   deathEffect: {fileID: 22781518256754565, guid: cec0f425db570ee4dbc11b024f151c2f, type: 3}
   healthBar: {fileID: 1575717720}
   isMultiply: 1
+  lesserSpawn: {fileID: 64440821143821531, guid: 1502b2d71c6d5fd4483667a7ab8093ff, type: 3}
 --- !u!135 &5186301931416488248
 SphereCollider:
   m_ObjectHideFlags: 0
